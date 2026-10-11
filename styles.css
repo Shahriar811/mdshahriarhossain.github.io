@@ -133,10 +133,7 @@ h3 { font-family: var(--display); letter-spacing: -.04em; font-weight: 600; }
 .phone img { width: 100%; height: auto; aspect-ratio: 1080 / 2340; object-fit: cover; border-radius: 17px; }
 .phone-back { left: 15px; top: 6px; transform: rotate(-9deg); }.phone-front { right: 10px; top: -10px; transform: rotate(8deg); }
 .phone-back:hover { transform: rotate(-9deg) translateY(-8px); }.phone-front:hover { transform: rotate(8deg) translateY(-8px); }
-.compact-project .project-stage { height: 270px; }.cinelog-stage { background: #efb38e; }
-.film-art { width: 275px; transform: rotate(-6deg); }
-.film-title { font: 700 49px var(--display); letter-spacing: -.08em; }.film-title > span { -webkit-text-stroke: 1.5px #181818; color: transparent; }
-.film-tickets { display: flex; justify-content: space-between; border: 1.5px dashed #181818; padding: 15px 18px; font: 12px/1.5 var(--mono); background: #fff8ed; box-shadow: 4px 4px 0 #181818; }.ticket-star { font-size: 54px; }
+.cinelog-stage { background: #efb38e; }
 .life-stage { background: #dce4ec; }
 .mobility-project { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1.18fr; }
 .mobility-project .project-stage { height: 100%; min-height: 380px; border-bottom: 0; border-right: 1.5px solid var(--ink); }
@@ -177,7 +174,6 @@ h3 { font-family: var(--display); letter-spacing: -.04em; font-weight: 600; }
   .featured-project { grid-template-columns: 1fr; }.featured-project .project-stage { min-height: 320px; border-left: 0; border-top: 1.5px solid var(--ink); }.featured-project .project-copy h3 { font-size: 38px; }
   .project-stage { height: 285px; }.phone-pair { transform: scale(.85); }.project-copy { padding: 22px; }.project-copy h3 { font-size: 27px; }.project-links .button { padding: 7px 13px; }.project-description { font-size: 12px; }.tech-tags { gap: 5px; }.tech-tags li { font-size: 8px; }.project-links .text-link { font-size: 12px; }
   .mobility-project { grid-template-columns: 1fr 1fr; }.mobility-project .project-stage { min-height: 350px; }
-  .film-art { width: 225px; }.film-title { font-size: 42px; }.film-tickets { font-size: 10px; }
   .about-layout { grid-template-columns: 1fr; gap: 36px; }.about-note { width: min(100% - 12px, 450px); margin-left: 6px; }.about-section { padding-bottom: 60px; }.asterisk { font-size: 80px; }
   .skill-row { grid-template-columns: 210px 1fr; gap: 20px; }.skill-row h3 { font-size: 15px; }.skill-row h3 .mono { margin-right: 10px; }
   .journey-item { grid-template-columns: 115px 1fr; gap: 18px; }.journey-symbol { display: none; }.grade { grid-column: 2; justify-self: start; }
@@ -231,7 +227,7 @@ h3 { font-family: var(--display); letter-spacing: -.04em; font-weight: 600; }
   h2 { font-size: clamp(32px, 8.5vw, 40px); }
   .project-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   .filter { min-height: 44px; font-size: 12px; padding: 9px 12px; }
-  .project-stage, .compact-project .project-stage { height: 360px; }
+  .project-stage { height: 360px; }
   .phone-pair { width: min(250px, calc(100% - 32px)); height: 280px; margin-top: 0; transform: none; }
   .phone { width: clamp(105px, 31vw, 118px); }
   .phone-back { left: 10px; top: 6px; transform: rotate(-6deg); }
