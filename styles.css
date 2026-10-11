@@ -51,7 +51,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .hero-eyebrow { display: flex; align-items: center; gap: 22px; }
 .eyebrow-line { height: 1px; flex: 1; background: var(--line); }
 .availability { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; }
-.availability i, .privacy-note i { width: 7px; height: 7px; border-radius: 50%; background: #477848; box-shadow: 0 0 0 3px #47784815; }
+.availability i { width: 7px; height: 7px; border-radius: 50%; background: #477848; box-shadow: 0 0 0 3px #47784815; }
 .hero-heading-wrap { position: relative; margin-top: 28px; }
 h1 { font-family: var(--display); font-size: clamp(68px, 9.55vw, 126px); font-weight: 700; letter-spacing: -.075em; line-height: .98; }
 .name-prefix { font-size: .43em; letter-spacing: -.06em; }
@@ -119,14 +119,7 @@ h3 { font-family: var(--display); letter-spacing: -.04em; font-weight: 600; }
 .featured-project .project-stage { height: 100%; min-height: 380px; border-bottom: 0; border-left: 1.5px solid var(--ink); }
 .small-note { font-size: 8px; color: var(--muted); }
 .solvix-stage { background: #efdf91; background-image: radial-gradient(#18181820 1px, transparent 1px); background-size: 15px 15px; }
-.inference-diagram { width: 235px; display: flex; flex-direction: column; align-items: center; padding: 35px 0; }
-.diagram-node { font: 11px var(--mono); text-align: center; }
-.diagram-node > span { display: block; font: 24px var(--display); padding: 4px; }
-.device-node { display: flex; align-items: center; flex-direction: column; width: 100%; padding: 16px 22px; background: #fffef9; border: 1.5px solid #181818; border-radius: 12px; box-shadow: 4px 4px 0 #181818; }
-.device-node svg { width: 35px; height: 35px; stroke: #181818; fill: none; stroke-width: 1.7; margin-bottom: 6px; }
-.device-node strong { font: 600 18px var(--display); }
-.device-node > span { font: 9px var(--mono); margin-top: 5px; color: #64645c; }
-.privacy-note { display: flex; align-items: center; gap: 8px; margin-top: 16px; font: 9px var(--mono); }
+.solvix-stage .phone-pair { margin-top: 0; }
 .adda-stage { background: #dfe7dc; }.aura-stage { background: #e7dff0; }
 .phone-pair { position: relative; width: 280px; height: 310px; margin-top: 65px; }
 .phone { position: absolute; width: 142px; padding: 4px; border: 2px solid #181818; border-radius: 23px; background: #181818; box-shadow: 8px 10px 14px #0002; transition: transform .25s; }
