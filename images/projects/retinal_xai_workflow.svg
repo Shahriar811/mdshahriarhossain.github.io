@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="260" viewBox="0 0 440 260">
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="m0 0 7 3.5-7 3.5z" fill="#6a528c"/></marker></defs>
+  <g font-family="Arial, sans-serif" fill="#181818">
+    <rect x="20" y="57" width="125" height="148" rx="13" fill="#fffef9" stroke="#181818" stroke-width="1.5"/>
+    <circle cx="82" cy="120" r="40" fill="#e9b792" stroke="#181818" stroke-width="1.5"/><circle cx="69" cy="116" r="7" fill="#fff0bf"/>
+    <g fill="none" stroke="#a85945" stroke-width="1.5"><path d="M70 117q20-22 33-25M75 112l7-22M70 117q18 17 32 33M87 136l15-3M69 119q-10 15-10 34M66 128l-12 9"/></g>
+    <text x="82" y="181" text-anchor="middle" font-size="12" font-weight="700">RETINAL IMAGE</text>
+    <path d="M147 130h34M259 130h26v-52h16M285 130v52h16" fill="none" stroke="#6a528c" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="183" y="88" width="76" height="84" rx="10" fill="#ffda38" stroke="#181818" stroke-width="1.5"/>
+    <g fill="none" stroke="#181818" stroke-width="1.3"><path d="M196 105h22v25h-22zM204 111h22v25h-22zM212 117h22v25h-22z"/></g>
+    <text x="221" y="156" text-anchor="middle" font-size="12" font-weight="700">CNN</text>
+    <rect x="303" y="45" width="117" height="69" rx="11" fill="#fffef9" stroke="#181818" stroke-width="1.5"/><rect x="303" y="147" width="117" height="69" rx="11" fill="#fffef9" stroke="#181818" stroke-width="1.5"/>
+    <g text-anchor="middle" font-size="12" font-weight="700"><text x="361" y="74">Classification</text><text x="361" y="177">Grad-CAM++</text></g>
+    <g text-anchor="middle" font-size="10" fill="#64645c"><text x="361" y="94">Disease prediction</text><text x="361" y="197">Model attention</text></g>
+    <text x="220" y="241" text-anchor="middle" font-size="10" fill="#6a528c">PREDICT · EXPLAIN · EXPLORE</text>
+  </g>
+</svg>

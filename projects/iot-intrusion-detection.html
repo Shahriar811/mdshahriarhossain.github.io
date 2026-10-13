@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f6ef" />
+  <title>Federated &amp; RL-Based IoT Intrusion Detection — Shahriar Hossain</title>
+  <meta name="description" content="An IoT intrusion-detection research project combining XGBoost, a Dueling DQN agent, Flower federated learning, and a Flask dashboard. By Md. Shahriar Hossain." />
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem('shahriar_portfolio_theme') === 'dark' ? 'dark' : 'light'; } catch { document.documentElement.dataset.theme = 'light'; }</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=d56f8457c7d9" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav shell" aria-label="Project navigation"><a class="brand" href="../index.html" aria-label="Shahriar Hossain, home">SH<span class="brand-dot">.</span></a><a class="text-link" href="../index.html#iot-ids">Back to portfolio <span aria-hidden="true">↗</span></a></nav></header>
+  <main id="main" class="shell research-page">
+    <span class="section-index mono">ML &amp; AI / IOT SECURITY RESEARCH</span>
+    <h1>Privacy-Preserving Federated and Reinforcement Learning-Based Intrusion Detection System for IoT Devices</h1>
+    <p class="research-lead">A research system that brings supervised detection, reinforcement learning, and collaborative model training into one workflow. Clients keep raw network-flow data locally and exchange model weights with a federated server.</p>
+    <ul class="tech-tags" aria-label="Project technologies"><li>Python</li><li>PyTorch</li><li>Flower / FedAvg</li><li>Dueling DQN</li><li>XGBoost</li><li>Flask</li></ul>
+    <figure class="research-banner"><img src="../images/projects/iot_federated_workflow.svg" width="440" height="260" alt="Three clients train locally, share weights with a Flower server, and receive an updated global model"/><figcaption class="mono">Illustrated architecture: one federated server, three local clients.</figcaption></figure>
+    <div class="research-detail-grid">
+      <section class="research-detail" aria-labelledby="problemTitle"><h2 id="problemTitle">The problem</h2><p>IoT intrusion detection needs to identify attacks from network traffic. Centralizing every client's raw traffic creates a data-sharing constraint. This project explores collaborative training while keeping those raw flows at the clients.</p></section>
+      <section class="research-detail" aria-labelledby="learningTitle"><h2 id="learningTitle">Local learning → federated learning</h2><p>A Dueling DQN agent is trained locally before Flower aggregates model weights across three clients with FedAvg. Clients receive the updated global model for subsequent local training.</p><p>The implemented agent uses one-step, class-weighted feedback on independent network flows to learn attack-class decisions.</p></section>
+      <section class="research-detail" aria-labelledby="detectionTitle"><h2 id="detectionTitle">Three views of a prediction</h2><p>XGBoost provides the main supervised attack prediction. The Flask dashboard also presents the local RL agent's decision and the federated global model's decision side by side.</p><p>Preprocessing artifacts and saved model checkpoints connect notebook training to the inference interface.</p></section>
+      <section class="research-detail" aria-labelledby="dashboardTitle"><h2 id="dashboardTitle">Training you can inspect</h2><p>The local dashboard reads federated status files, training rounds, and client heartbeats. Separate server and client processes make it possible to inspect training activity alongside the saved global model.</p><p>The privacy approach keeps raw flows local; the federated exchange consists of model weights.</p></section>
+    </div>
+    <div class="research-actions"><a class="button button-primary" href="../index.html#work">Explore all projects <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:mdshahriarhossain08@gmail.com?subject=IoT%20intrusion%20detection%20research">Discuss this research <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="site-footer shell"><a class="brand" href="../index.html" aria-label="Portfolio home">SH<span class="brand-dot">.</span></a><p>Md. Shahriar Hossain<br/><span>North South University · Dhaka</span></p><a class="back-top mono" href="#main">BACK TO TOP ↑</a></footer>
+</body>
+</html>

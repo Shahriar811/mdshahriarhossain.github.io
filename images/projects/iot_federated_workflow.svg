@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="260" viewBox="0 0 440 260">
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="m0 0 7 3.5-7 3.5z" fill="#38684e"/></marker></defs>
+  <g font-family="Arial, sans-serif" fill="#181818">
+    <g fill="none" stroke="#38684e" stroke-width="2" marker-end="url(#arrow)"><path d="M135 49h41q18 0 18 18v35h62"/><path d="M135 130h121"/><path d="M135 211h41q18 0 18-18v-35h62"/></g>
+    <g fill="#fffef9" stroke="#181818" stroke-width="1.5"><rect x="22" y="20" width="113" height="58" rx="10"/><rect x="22" y="101" width="113" height="58" rx="10"/><rect x="22" y="182" width="113" height="58" rx="10"/><rect x="257" y="65" width="160" height="130" rx="14"/></g>
+    <g font-size="13" font-weight="700" text-anchor="middle"><text x="78" y="45">CLIENT 01</text><text x="78" y="126">CLIENT 02</text><text x="78" y="207">CLIENT 03</text></g>
+    <g font-size="10" text-anchor="middle" fill="#64645c"><text x="78" y="62">Local RL training</text><text x="78" y="143">Local RL training</text><text x="78" y="224">Local RL training</text><text x="337" y="153">Flower · FedAvg</text><text x="337" y="172">Shared Dueling DQN</text></g>
+    <path d="M337 83l18 7v15c0 13-18 22-18 22s-18-9-18-22V90z" fill="#ffda38" stroke="#181818" stroke-width="1.5"/><path d="m329 104 6 6 11-13" fill="none" stroke="#181818" stroke-width="2"/>
+    <text x="337" y="140" font-size="13" font-weight="700" text-anchor="middle">GLOBAL MODEL</text><text x="195" y="120" font-size="9" text-anchor="middle" fill="#38684e">weights</text>
+    <path d="M337 201v48H78v-6" fill="none" stroke="#38684e" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+    <rect x="177" y="240" width="145" height="17" fill="#d8e8df"/><text x="249" y="252" text-anchor="middle" font-size="9" fill="#38684e">updated model → clients</text>
+  </g>
+</svg>
