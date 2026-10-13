@@ -14,7 +14,7 @@ themeToggle.addEventListener("click", () => {
   updateThemeControl();
 });
 const dialog = document.getElementById("imageDialog");
-document.querySelectorAll("[data-preview]").forEach((button) => {
+document.querySelectorAll("[data-preview]:not([data-gallery-preview])").forEach((button) => {
   button.addEventListener("click", () => {
     dialog.dataset.kind = button.dataset.previewKind || "chart";
     const img = document.getElementById("previewImage");

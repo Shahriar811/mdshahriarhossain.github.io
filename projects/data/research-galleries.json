@@ -1,0 +1,160 @@
+{
+  "projects": [
+    {
+      "id": "iot-ids",
+      "label": "IoT IDS",
+      "images": [
+        {
+          "file": "iot-full-model-pipeline-v2.png",
+          "title": "Complete model pipeline",
+          "caption": "All 12 ML models, 8 deep-learning models, 5 RL agents, custom model, and federated variants.",
+          "source": "AI-generated architecture illustration."
+        },
+        {
+          "file": "iot-all-model-performance-v2.png",
+          "title": "Complete model comparison",
+          "caption": "27 recorded scores. HybridIDSNet is listed without a stored score. Enlarge or open full size to read every row.",
+          "source": "Saved CSV, model_info.json, and federated checkpoint metadata."
+        },
+        {
+          "file": "iot-dataset-size.png",
+          "title": "Dataset size & preprocessing",
+          "caption": "457,044 raw flows → 454,112 cleaned flows. Recorded training and test counts are shown.",
+          "source": "IDS_FL_RL_Combined.ipynb preprocessing outputs."
+        },
+        {
+          "file": "iot-rl-performance.png",
+          "title": "All five RL agents",
+          "caption": "Accuracy and weighted F1 for DQN-Basic, DQN-Improved, PPO, Rainbow-DQN, and QR-DQN.",
+          "source": "Saved model/model_info.json."
+        },
+        {
+          "file": "iot-federated-checkpoints-v2.png",
+          "title": "Federated checkpoint comparison",
+          "caption": "Stored accuracy for the ResNet-MLP and RL-Dueling variants at round 5.",
+          "source": "Saved model/FL checkpoint metadata."
+        },
+        {
+          "file": "iot-test-class-distribution.png",
+          "title": "Test-set class distribution",
+          "caption": "90,823 holdout flows across Benign, Bot, DDoS, Dos, and Prob.",
+          "source": "Saved notebook classification report."
+        },
+        {
+          "file": "iot-shap-feature-importance.png",
+          "title": "XGBoost feature attribution",
+          "caption": "Original SHAP report figure showing which inputs influence predictions.",
+          "source": "REport/shap_global_xgboost.png."
+        }
+      ]
+    },
+    {
+      "id": "retinal-research",
+      "label": "Retinal eye-disease research",
+      "images": [
+        {
+          "file": "retinal-generated-pipeline.png",
+          "title": "Classification & XAI pipeline",
+          "caption": "Vision models, Grad-CAM++, federated experiments, and web/API/Android deployment.",
+          "source": "AI-generated architecture illustration."
+        },
+        {
+          "file": "retinal-model-performance.png",
+          "title": "Vision-model comparison",
+          "caption": "Five backbone models and the separate OurCNN experiment; recorded accuracy and weighted F1.",
+          "source": "CSE498V2 and Custom CNN(Light weight) notebook outputs."
+        },
+        {
+          "file": "retinal-dataset-samples.png",
+          "title": "Original dataset samples",
+          "caption": "One example from each of the ten image classes, with recorded class counts.",
+          "source": "CSE498V2.ipynb, cell 7: original saved figure."
+        },
+        {
+          "file": "retinal-gradcam-example.png",
+          "title": "Grad-CAM++ explanation example",
+          "caption": "Original image beside the model-attention heatmap from a saved research prediction.",
+          "source": "CSE498V2.ipynb, cell 24: original saved XAI figure."
+        },
+        {
+          "file": "retinal-densenet-confusion-matrix.png",
+          "title": "DenseNet121 confusion matrix",
+          "caption": "Saved test-set confusion matrix across all ten classes.",
+          "source": "CSE498V2.ipynb, cell 20: DenseNet121 output."
+        },
+        {
+          "file": "retinal-dataset-distribution.png",
+          "title": "Image-class distribution",
+          "caption": "16,242 indexed augmented images across ten classes.",
+          "source": "Saved notebook image counts."
+        },
+        {
+          "file": "retinal-federated-rounds.png",
+          "title": "Federated validation rounds",
+          "caption": "FedAvg and FedProx validation accuracy across three rounds; these are validation scores.",
+          "source": "CSE498V2.ipynb federation outputs."
+        },
+        {
+          "file": "retinal-ourcnn-training-curves.png",
+          "title": "OurCNN training curves",
+          "caption": "Original training/validation accuracy and loss across 15 epochs.",
+          "source": "Custom CNN/OurCNN models/ourcnn_train_val_curves.png."
+        }
+      ]
+    },
+    {
+      "id": "banknote-authentication",
+      "label": "Banknote authentication",
+      "images": [
+        {
+          "file": "banknote-generated-pipeline.png",
+          "title": "Banknote-classification pipeline",
+          "caption": "Image preprocessing, MobileNetV2 transfer learning, binary classification, and Flask inference.",
+          "source": "AI-generated architecture illustration."
+        },
+        {
+          "file": "banknote-test-performance.png",
+          "title": "Recorded test performance",
+          "caption": "97.48% test accuracy on 1,668 images; ROC AUC is shown × 100.",
+          "source": "Public evaluation notebook and classification report."
+        },
+        {
+          "file": "banknote-dataset-samples.png",
+          "title": "Original banknote samples",
+          "caption": "Recorded examples from the fake and real source-pool folders.",
+          "source": "data_preparation.ipynb, cell 6: original saved figure."
+        },
+        {
+          "file": "banknote-prediction-examples.png",
+          "title": "Sample model predictions",
+          "caption": "Original actual/predicted labels, including a misclassified example.",
+          "source": "model_evaluation.ipynb, cell 3: original saved figure."
+        },
+        {
+          "file": "banknote-original-roc-curve.png",
+          "title": "Original ROC curve",
+          "caption": "Recorded receiver-operating-characteristic curve with AUC 0.9923.",
+          "source": "model_evaluation.ipynb, cell 7: original saved figure."
+        },
+        {
+          "file": "banknote-confusion-matrix.png",
+          "title": "Test confusion matrix",
+          "caption": "682 fake and 944 real images were correctly classified in the saved evaluation.",
+          "source": "Saved evaluation confusion matrix."
+        },
+        {
+          "file": "banknote-dataset-distribution.png",
+          "title": "Recorded class counts",
+          "caption": "Source-pool and test-set counts, displayed separately. Split-record differences are explained on the detail page.",
+          "source": "Preparation and evaluation notebooks."
+        },
+        {
+          "file": "banknote-training-curves.png",
+          "title": "Training-history curves",
+          "caption": "50 recorded epochs of accuracy and loss; this history is a separate saved artifact.",
+          "source": "Public training_history.json."
+        }
+      ]
+    }
+  ]
+}
