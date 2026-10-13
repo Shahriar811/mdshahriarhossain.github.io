@@ -1,0 +1,69 @@
+{
+  "project": "Bangladeshi banknote authentication",
+  "dataset": {
+    "source_pool": 6794,
+    "source_fake": 2933,
+    "source_real": 3861,
+    "preparation_train": 5434,
+    "preparation_validation": 1360,
+    "logged_training": 6794,
+    "logged_validation": 1360,
+    "test": 1668,
+    "test_fake": 706,
+    "test_real": 962,
+    "input_pixels": [
+      224,
+      224,
+      3
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.9748201438848921,
+    "weighted_precision": 0.9748,
+    "weighted_recall": 0.9748,
+    "weighted_f1": 0.9748,
+    "roc_auc": 0.9923
+  },
+  "confusion_matrix": [
+    [
+      682,
+      24
+    ],
+    [
+      18,
+      944
+    ]
+  ],
+  "class_results": [
+    {
+      "class": "FAKE",
+      "precision": 0.9743,
+      "recall": 0.966,
+      "f1": 0.9701,
+      "test_support": 706
+    },
+    {
+      "class": "REAL",
+      "precision": 0.9752,
+      "recall": 0.9813,
+      "f1": 0.9782,
+      "test_support": 962
+    }
+  ],
+  "model": {
+    "backbone": "ImageNet-pretrained MobileNetV2 (frozen)",
+    "head": "Global average pooling → BatchNorm / Dropout → Dense 128 → Dense 64 → sigmoid",
+    "trainable_parameters": 175105
+  },
+  "sources": [
+    "Public GitHub data_preparation.ipynb, model_training.ipynb, model_evaluation.ipynb",
+    "Public GitHub classification_report.txt",
+    "Public GitHub training_history.json"
+  ],
+  "notes": [
+    "Preparation records 5,434 train / 1,360 validation images, while the training notebook logs 6,794 train / 1,360 validation. These are separate records and are not summed as a unique total.",
+    "Split consistency and overlap cannot be established from the available artifacts.",
+    "The 97.48% score is the recorded test result on 1,668 images; no retraining was performed.",
+    "Training curves use the separately saved training_history.json artifact; a different validation summary is present in the training notebook."
+  ]
+}

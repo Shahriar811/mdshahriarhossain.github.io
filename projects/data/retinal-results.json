@@ -1,0 +1,115 @@
+{
+  "project": "Explainable retinal eye-disease classification",
+  "dataset": {
+    "name": "Eye Disease Image Dataset / Augmented Dataset",
+    "images": 16242,
+    "classes": 10,
+    "train": 11369,
+    "validation": 2436,
+    "test": 2437,
+    "class_counts": {
+      "Central Serous Chorioretinopathy [Color Fundus]": 606,
+      "Diabetic Retinopathy": 3444,
+      "Disc Edema": 762,
+      "Glaucoma": 2880,
+      "Healthy": 2676,
+      "Macular Scar": 1937,
+      "Myopia": 2251,
+      "Pterygium": 102,
+      "Retinal Detachment": 750,
+      "Retinitis Pigmentosa": 834
+    }
+  },
+  "model_results": [
+    {
+      "Model": "DenseNet121",
+      "Accuracy": 0.898236,
+      "Precision": 0.898735,
+      "Recall": 0.898236,
+      "F1": 0.897405
+    },
+    {
+      "Model": "ResNet50",
+      "Accuracy": 0.896594,
+      "Precision": 0.8974,
+      "Recall": 0.896594,
+      "F1": 0.895749
+    },
+    {
+      "Model": "EfficientNet-B0",
+      "Accuracy": 0.894953,
+      "Precision": 0.895894,
+      "Recall": 0.894953,
+      "F1": 0.89447
+    },
+    {
+      "Model": "MobileNetV3-Small",
+      "Accuracy": 0.86787,
+      "Precision": 0.869781,
+      "Recall": 0.86787,
+      "F1": 0.866099
+    },
+    {
+      "Model": "ViT Small",
+      "Accuracy": 0.823554,
+      "Precision": 0.829155,
+      "Recall": 0.823554,
+      "F1": 0.82147
+    },
+    {
+      "Model": "OurCNN",
+      "Params": 122972,
+      "Accuracy": 0.762413,
+      "Precision": 0.77348,
+      "Recall": 0.762413,
+      "F1": 0.754777
+    }
+  ],
+  "federated_validation_results": [
+    {
+      "strategy": "FedAvg",
+      "round": 1,
+      "validation_accuracy": 0.663383,
+      "validation_weighted_f1": 0.644785
+    },
+    {
+      "strategy": "FedAvg",
+      "round": 2,
+      "validation_accuracy": 0.754516,
+      "validation_weighted_f1": 0.750461
+    },
+    {
+      "strategy": "FedAvg",
+      "round": 3,
+      "validation_accuracy": 0.791461,
+      "validation_weighted_f1": 0.787064
+    },
+    {
+      "strategy": "FedProx",
+      "round": 1,
+      "validation_accuracy": 0.664204,
+      "validation_weighted_f1": 0.640212
+    },
+    {
+      "strategy": "FedProx",
+      "round": 2,
+      "validation_accuracy": 0.753284,
+      "validation_weighted_f1": 0.74357
+    },
+    {
+      "strategy": "FedProx",
+      "round": 3,
+      "validation_accuracy": 0.789819,
+      "validation_weighted_f1": 0.785468
+    }
+  ],
+  "sources": [
+    "CSE498V2.ipynb: saved outputs in cells 5, 8, 19, 27 (zero-based)",
+    "Custom CNN(Light weight).ipynb: saved OurCNN results in cell 11"
+  ],
+  "notes": [
+    "Backbone test results are from CSE498V2; OurCNN is a separate lightweight-model experiment.",
+    "F1 values are weighted. Federated round metrics are validation scores, not test scores.",
+    "The indexed input directory is an augmented image dataset; these counts do not establish unique patients or a patient-level split."
+  ]
+}

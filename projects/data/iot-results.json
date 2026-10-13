@@ -1,0 +1,254 @@
+{
+  "project": "IoT intrusion detection",
+  "dataset": {
+    "name": "ASEADOS_SDN_IoT.csv",
+    "raw_flows": 457044,
+    "cleaned_flows": 454112,
+    "train": 363289,
+    "test": 90823,
+    "features": 42,
+    "classes": 5,
+    "test_class_counts": {
+      "Benign": 51986,
+      "Bot": 1792,
+      "DDoS": 10054,
+      "Dos": 25478,
+      "Prob": 1513
+    }
+  },
+  "supervised_results": [
+    {
+      "Model": "XGBoost",
+      "Kind": "Traditional",
+      "Accuracy": 0.8442465014368608,
+      "Precision": 0.9120641696631075,
+      "Recall": 0.8442465014368608,
+      "F1": 0.8703554795862735,
+      "F1_macro": 0.6284347186776318
+    },
+    {
+      "Model": "LightGBM",
+      "Kind": "Traditional",
+      "Accuracy": 0.8432445525913039,
+      "Precision": 0.9118321824867592,
+      "Recall": 0.8432445525913039,
+      "F1": 0.8697481536666244,
+      "F1_macro": 0.6245207783142878
+    },
+    {
+      "Model": "Random Forest",
+      "Kind": "Traditional",
+      "Accuracy": 0.8422095724651245,
+      "Precision": 0.9055454307283086,
+      "Recall": 0.8422095724651245,
+      "F1": 0.8667042210156302,
+      "F1_macro": 0.6178817613645399
+    },
+    {
+      "Model": "Decision Tree",
+      "Kind": "Traditional",
+      "Accuracy": 0.8445437829624655,
+      "Precision": 0.8995107742071478,
+      "Recall": 0.8445437829624655,
+      "F1": 0.8663755863266802,
+      "F1_macro": 0.6181266255634462
+    },
+    {
+      "Model": "KNN",
+      "Kind": "Traditional",
+      "Accuracy": 0.8372218490910892,
+      "Precision": 0.9013480297122164,
+      "Recall": 0.8372218490910892,
+      "F1": 0.8621499212042391,
+      "F1_macro": 0.616909544894873
+    },
+    {
+      "Model": "CatBoost",
+      "Kind": "Traditional",
+      "Accuracy": 0.8310229787608866,
+      "Precision": 0.9107706904094848,
+      "Recall": 0.8310229787608866,
+      "F1": 0.8616259549449635,
+      "F1_macro": 0.6076634851919871
+    },
+    {
+      "Model": "Extra Trees",
+      "Kind": "Traditional",
+      "Accuracy": 0.8441363971681182,
+      "Precision": 0.887063462314222,
+      "Recall": 0.8441363971681182,
+      "F1": 0.861483923220335,
+      "F1_macro": 0.6026406424922126
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Kind": "Traditional",
+      "Accuracy": 0.8318487607764553,
+      "Precision": 0.9095725135704265,
+      "Recall": 0.8318487607764553,
+      "F1": 0.8614578503298829,
+      "F1_macro": 0.6100428924084552
+    },
+    {
+      "Model": "ResNet-MLP",
+      "Kind": "Deep Learning",
+      "Accuracy": 0.8180857271836429,
+      "Precision": 0.9073512078479484,
+      "Recall": 0.8180857271836429,
+      "F1": 0.8523930037822521,
+      "F1_macro": 0.585812110158533
+    },
+    {
+      "Model": "Transformer",
+      "Kind": "Deep Learning",
+      "Accuracy": 0.816280017176266,
+      "Precision": 0.9025396220017216,
+      "Recall": 0.816280017176266,
+      "F1": 0.8495763478974441,
+      "F1_macro": 0.5786469967114349
+    },
+    {
+      "Model": "CNN1D",
+      "Kind": "Deep Learning",
+      "Accuracy": 0.8129218369796197,
+      "Precision": 0.9068843998722306,
+      "Recall": 0.8129218369796197,
+      "F1": 0.8493473218428854,
+      "F1_macro": 0.5813840008753607
+    },
+    {
+      "Model": "DNN",
+      "Kind": "Deep Learning",
+      "Accuracy": 0.8107197516047697,
+      "Precision": 0.9051477924242246,
+      "Recall": 0.8107197516047697,
+      "F1": 0.8469957338191892,
+      "F1_macro": 0.5668972590961929
+    },
+    {
+      "Model": "CNN-LSTM",
+      "Kind": "Deep Learning",
+      "Accuracy": 0.8100150842848177,
+      "Precision": 0.905193613088713,
+      "Recall": 0.8100150842848177,
+      "F1": 0.8461713229468083,
+      "F1_macro": 0.5716667841100509
+    },
+    {
+      "Model": "LSTM",
+      "Kind": "Deep Learning",
+      "Accuracy": 0.803331755172148,
+      "Precision": 0.9022122540161814,
+      "Recall": 0.803331755172148,
+      "F1": 0.8410659217352586,
+      "F1_macro": 0.5647107284513068
+    },
+    {
+      "Model": "BiLSTM",
+      "Kind": "Deep Learning",
+      "Accuracy": 0.80315558834216,
+      "Precision": 0.9003866402868286,
+      "Recall": 0.80315558834216,
+      "F1": 0.8409574286120443,
+      "F1_macro": 0.5737490994561691
+    },
+    {
+      "Model": "GRU",
+      "Kind": "Deep Learning",
+      "Accuracy": 0.8014709930303998,
+      "Precision": 0.9016795426320826,
+      "Recall": 0.8014709930303998,
+      "F1": 0.8396596959943435,
+      "F1_macro": 0.5643981751306433
+    },
+    {
+      "Model": "Logistic Regression",
+      "Kind": "Traditional",
+      "Accuracy": 0.7932682250090836,
+      "Precision": 0.885966962876638,
+      "Recall": 0.7932682250090836,
+      "F1": 0.8300843791430033,
+      "F1_macro": 0.5628479034491349
+    },
+    {
+      "Model": "Linear SVM",
+      "Kind": "Traditional",
+      "Accuracy": 0.7924864847010119,
+      "Precision": 0.8864901080724709,
+      "Recall": 0.7924864847010119,
+      "F1": 0.8298203453470289,
+      "F1_macro": 0.5607778857267681
+    },
+    {
+      "Model": "AdaBoost",
+      "Kind": "Traditional",
+      "Accuracy": 0.648249892648338,
+      "Precision": 0.7696478609841582,
+      "Recall": 0.648249892648338,
+      "F1": 0.6830302204108416,
+      "F1_macro": 0.4637680321788436
+    },
+    {
+      "Model": "Gaussian NB",
+      "Kind": "Traditional",
+      "Accuracy": 0.6225845876044614,
+      "Precision": 0.7684468004034846,
+      "Recall": 0.6225845876044614,
+      "F1": 0.6549124092619093,
+      "F1_macro": 0.3940428432083563
+    }
+  ],
+  "rl_results": [
+    {
+      "Model": "DQN-Basic",
+      "Accuracy": 0.8197372912147805,
+      "Precision": 0.8978275749900863,
+      "Recall": 0.8197372912147805,
+      "F1": 0.8512181563291429,
+      "F1_macro": 0.5689557578014283
+    },
+    {
+      "Model": "DQN-Improved",
+      "Accuracy": 0.8176012684011759,
+      "Precision": 0.892736854278723,
+      "Recall": 0.8176012684011759,
+      "F1": 0.8478706849324344,
+      "F1_macro": 0.5739449531968807
+    },
+    {
+      "Model": "PPO",
+      "Accuracy": 0.8253636193475221,
+      "Precision": 0.8993118709525292,
+      "Recall": 0.8253636193475221,
+      "F1": 0.85557864723728,
+      "F1_macro": 0.6126259704661905
+    },
+    {
+      "Model": "Rainbow-DQN",
+      "Accuracy": 0.79698974929258,
+      "Precision": 0.8474570611954121,
+      "Recall": 0.79698974929258,
+      "F1": 0.8159833895280942,
+      "F1_macro": 0.507008722823951
+    },
+    {
+      "Model": "QR-DQN",
+      "Accuracy": 0.7869922816907612,
+      "Precision": 0.8856367470887045,
+      "Recall": 0.7869922816907612,
+      "F1": 0.825233630362851,
+      "F1_macro": 0.5552380225416198
+    }
+  ],
+  "sources": [
+    "IDS_FL_RL_Combined.ipynb: saved outputs in cells 9, 12, 13, 14, 15, 50 (zero-based)",
+    "Saved model/results_summary.csv: supervised model rows",
+    "Saved model/model_info.json: saved RL results"
+  ],
+  "notes": [
+    "Metrics are saved experiment outputs, not a new training run.",
+    "Supervised and RL scores come from distinct saved artifacts; older RL rows in results_summary.csv are not used.",
+    "F1 is weighted; F1_macro is also retained.",
+    "Federated training uses three clients; no new global RL accuracy is inferred from the server status file."
+  ]
+}

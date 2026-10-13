@@ -40,22 +40,24 @@ navLinks.addEventListener("click", (event) => { if (event.target.closest("a")) c
 document.addEventListener("keydown", (event) => { if (event.key === "Escape" && navLinks.classList.contains("open")) closeMenu(true); });
 document.addEventListener("click", (event) => { if (!event.target.closest(".nav")) closeMenu(); });
 window.matchMedia("(min-width: 801px)").addEventListener("change", (event) => { if (event.matches) closeMenu(); });
-const filters = document.querySelectorAll(".filter");
-const cards = document.querySelectorAll(".project-card");
-filters.forEach((button) => {
-  button.addEventListener("click", () => {
-    filters.forEach((filter) => {
-      const selected = filter === button;
-      filter.classList.toggle("active", selected);
-      filter.setAttribute("aria-pressed", String(selected));
+document.querySelectorAll(".work-section").forEach((section) => {
+  const filters = section.querySelectorAll(".filter");
+  const cards = section.querySelectorAll(".project-card");
+  filters.forEach((button) => {
+    button.addEventListener("click", () => {
+      filters.forEach((filter) => {
+        const selected = filter === button;
+        filter.classList.toggle("active", selected);
+        filter.setAttribute("aria-pressed", String(selected));
+      });
+      let count = 0;
+      cards.forEach((card) => {
+        const visible = button.dataset.filter === "all" || card.dataset.category.split(" ").includes(button.dataset.filter);
+        card.hidden = !visible;
+        if (visible) count++;
+      });
+      section.querySelector(".project-count").textContent = `${count} ${count === 1 ? "project" : "projects"}`;
     });
-    let count = 0;
-    cards.forEach((card) => {
-      const visible = button.dataset.filter === "all" || card.dataset.category.split(" ").includes(button.dataset.filter);
-      card.hidden = !visible;
-      if (visible) count++;
-    });
-    document.getElementById("projectCount").textContent = `${count} ${count === 1 ? "project" : "projects"}`;
   });
 });
 document.getElementById("copyEmailBtn").addEventListener("click", async () => {
@@ -89,6 +91,7 @@ const dialog = document.getElementById("imageDialog");
 const previewImage = document.getElementById("previewImage");
 document.querySelectorAll("[data-preview]").forEach((button) => {
   button.addEventListener("click", () => {
+    dialog.dataset.kind = button.dataset.previewKind || "phone";
     previewImage.src = button.dataset.preview;
     previewImage.alt = button.dataset.caption;
     document.getElementById("previewCaption").textContent = button.dataset.caption;
