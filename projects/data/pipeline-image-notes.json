@@ -2,7 +2,7 @@
   "method": "Built-in image_gen tool",
   "image_usage": "Illustrations explain pipeline architecture; all statistical charts use recorded data.",
   "prompts": {
-    "iot": "Landscape scientific portfolio infographic: network flows \u2192 42 features \u2192 XGBoost attack prediction, and local Dueling DQN across three clients \u2192 Flower / FedAvg \u2192 global RL model \u2192 Flask dashboard. Raw data stays local; only weights move. Ivory, charcoal, yellow and sage paper-cut style; no performance figures.",
+    "iot": "Full-model IoT IDS pipeline showing all 12 traditional ML models, all 8 deep-learning models, all 5 RL agents, HybridIDSNet, and the current RL-Dueling and earlier ResNet-MLP FedAvg variants. Clearly separates model experiments from XGBoost and federated deployment.",
     "retinal": "Landscape scientific portfolio infographic: retinal images \u2192 preprocess and split \u2192 vision models (Custom CNN, DenseNet121, ResNet50, EfficientNet-B0, MobileNetV3, ViT) \u2192 10-class prediction \u2192 Web / API / Android. Branches for Grad-CAM++ attention heatmap and FedAvg / FedProx experiments. Ivory, charcoal, yellow and lavender paper-cut style; no performance figures. Correct heading to Vision models.",
     "banknote": "Landscape scientific portfolio infographic: banknote image \u2192 224 x 224 RGB \u2192 MobileNetV2 \u2192 binary classifier \u2192 authentic / counterfeit \u2192 Flask interface. Training branch for augmentation and transfer learning with TensorFlow / Keras. Ivory, charcoal, yellow and sand paper-cut style; no performance figures."
   }

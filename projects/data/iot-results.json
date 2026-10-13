@@ -243,12 +243,41 @@
   "sources": [
     "IDS_FL_RL_Combined.ipynb: saved outputs in cells 9, 12, 13, 14, 15, 50 (zero-based)",
     "Saved model/results_summary.csv: supervised model rows",
-    "Saved model/model_info.json: saved RL results"
+    "Saved model/model_info.json: saved RL results",
+    "Saved model/DL/hybrididsnet_(custom).pt: weights-only metadata inspection",
+    "Saved model/FL/federated_fedavg.pt and federated_rl_fedavg.pt: weights-only stored accuracy, loss, architecture and round metadata"
   ],
   "notes": [
     "Metrics are saved experiment outputs, not a new training run.",
     "Supervised and RL scores come from distinct saved artifacts; older RL rows in results_summary.csv are not used.",
     "F1 is weighted; F1_macro is also retained.",
-    "Federated training uses three clients; no new global RL accuracy is inferred from the server status file."
+    "Federated bars display acc stored in each checkpoint at round 5; no F1 is stored there.",
+    "HybridIDSNet is included in the model lineup without inventing an accuracy or F1 score."
+  ],
+  "custom_model": {
+    "Model": "HybridIDSNet",
+    "architecture": "HybridIDSNet (custom)",
+    "source": "Saved model/DL/hybrididsnet_(custom).pt",
+    "features": 42,
+    "score_available": false,
+    "note": "Checkpoint contains state_dict, class_names, n_features, and arch; no performance metric is stored."
+  },
+  "federated_checkpoint_results": [
+    {
+      "Model": "FedAvg / ResNet-MLP",
+      "architecture": "ResNet-MLP",
+      "Accuracy": 0.8071303524437643,
+      "loss": 0.43823541311096115,
+      "round": 5,
+      "source": "Saved model/FL/federated_fedavg.pt"
+    },
+    {
+      "Model": "FedAvg / RL-Dueling",
+      "architecture": "RL-Dueling",
+      "Accuracy": 0.8070863107362672,
+      "loss": 0.771654757054931,
+      "round": 5,
+      "source": "Saved model/FL/federated_rl_fedavg.pt"
+    }
   ]
 }

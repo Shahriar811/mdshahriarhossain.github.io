@@ -16,6 +16,7 @@ themeToggle.addEventListener("click", () => {
 const dialog = document.getElementById("imageDialog");
 document.querySelectorAll("[data-preview]").forEach((button) => {
   button.addEventListener("click", () => {
+    dialog.dataset.kind = button.dataset.previewKind || "chart";
     const img = document.getElementById("previewImage");
     img.src = button.dataset.preview;
     img.alt = button.dataset.caption;
